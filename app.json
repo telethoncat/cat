@@ -1,15 +1,15 @@
 {
-  "name": "telecat",
+  "name": "telethoncat",
   "description": "Userbot created by a @sshtml and join https://t.me/telethoncat for any problems or support",
   "logo": "https://telegra.ph/file/9ca9a06d80bcc91f27de4.png",
     "keywords": [
     "telegram",
     "userbot",
-    "plugin",
+    "telethoncat",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/telethoncat/telecat/",
+  "repository": "https://github.com/telethoncat/cat/",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
