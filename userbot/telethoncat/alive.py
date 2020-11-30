@@ -19,9 +19,9 @@ ALIVE_caption += "**cat OS** : `3.14`\n\n"
 ALIVE_caption += "**Current Sat** : `StarkGangSat-2.25`\n\n"
 ALIVE_caption += f"**My Boss** : {DEFAULTUSER} \n\n"
 ALIVE_caption += "**Heroku Database** : `AWS - Working Properly`\n\n"
-ALIVE_caption += "**License** : [MIT Licence](github.com/StarkGang/FridayUserbot/blob/master/LICENSE)\n\n"
-ALIVE_caption += "Copyright By [StarkGang@Github](GitHub.com/StarkGang)\n\n"
-ALIVE_caption += "[Deploy FridayUserbot](https://telegra.ph/FRIDAY-06-15)"
+ALIVE_caption += "**License** : [MIT Licence](github.com/telethoncat/cat/LICENSE)\n\n"
+ALIVE_caption += "Copyright By [Telethoncat@Github](GitHub.com/telethoncat)\n\n"
+ALIVE_caption += "[Deploy CatUserbot](https://github.com/telethoncat/cat)"
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
