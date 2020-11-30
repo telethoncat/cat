@@ -44,8 +44,8 @@ async def _(event):
             "**Process exited with** `status 143`",
             "**Starting process with command** `python3 -m stdborg`",
             "**State changed from starting to up**",
-            "__INFO:Friday:Logged in as 557667062__",
-            "__INFO:Friday:Successfully loaded all plugins__",
+            "__INFO:Telethoncat:Logged in as 557667062__",
+            "__INFO:Telethoncat:Successfully loaded all plugins__",
             "**Build Succeeded**"
 
  ]
