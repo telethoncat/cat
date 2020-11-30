@@ -133,7 +133,7 @@ async def promote(promt):
     await promt.edit("`Promoting...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "MemeMaster"  # Just in case.
+        rank = "telethoncat"  # Just in case.
     if user:
         pass
     else:
@@ -175,7 +175,7 @@ async def demote(dmod):
 
     # If passing, declare that we're going to demote
     await dmod.edit("`Demoting...`")
-    rank = "admeme"  # dummy rank, lol.
+    rank = "telethoncat"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
     if user:
@@ -253,9 +253,9 @@ async def ban(bon):
     # is done gracefully
     # Shout out the ID, so that fedadmins can fban later
     if reason:
-        await bon.edit(f"Loser `{str(user.id)}` was banned !!\nReason: {reason}")
+        await bon.edit(f"Loser `{str(user.id)}` لقد تم الحظر ✅ !!\nReason: {reason}")
     else:
-        await bon.edit(f"Bitch `{str(user.id)}` was banned !!")
+        await bon.edit(f"Bitch `{str(user.id)}` لقد تم الحظر ✅ !!")
     # Announce to the logging group if we have banned the person
     # successfully!
     if BOTLOG:
@@ -301,7 +301,7 @@ async def nothanos(unbon):
                 f"USER: [{user.first_name}](tg://user?id={user.id})\n"
                 f"CHAT: {unbon.chat.title}(`{unbon.chat_id}`)")
     except UserIdInvalidError:
-        await unbon.edit("`Uh oh my unban logic broke!`")
+        await unbon.edit("`لقد تم الغاء الحظر ✅ /n اشترك @telethoncat!`")
 
 
 #@register(outgoing=True, pattern="^.mute(?: |$)(.*)")
@@ -344,7 +344,7 @@ async def spider(spdr):
     # If everything goes well, do announcing and mute
     await spdr.edit("`Gets a tape!`")
     if mute(spdr.chat_id, user.id) is False:
-        return await spdr.edit('`Error! User probably already muted.`')
+        return await spdr.edit('`لقد تم بالفعل كتم هذا العضو ✨.`')
     else:
         try:
             await spdr.client(
@@ -363,7 +363,7 @@ async def spider(spdr):
                     f"USER: [{user.first_name}](tg://user?id={user.id})\n"
                     f"CHAT: {spdr.chat.title}(`{spdr.chat_id}`)")
         except UserIdInvalidError:
-            return await spdr.edit("`Uh oh my mute logic broke!`")
+            return await spdr.edit("`لقد تم كتم العضو ✅!`")
 
 
 #@register(outgoing=True, pattern="^.unmute(?: |$)(.*)")
@@ -398,13 +398,13 @@ async def unmoot(unmot):
         return
 
     if unmute(unmot.chat_id, user.id) is False:
-        return await unmot.edit("`Error! User probably already unmuted.`")
+        return await unmot.edit("`لقد قمت بالغاء كتم هذا العضو بالفعل ✨.`")
     else:
 
         try:
             await unmot.client(
                 EditBannedRequest(unmot.chat_id, user.id, UNBAN_RIGHTS))
-            await unmot.edit("```Unmuted Successfully```")
+            await unmot.edit("```تم الغاء كتم العضو ✅```")
         except UserIdInvalidError:
             await unmot.edit("`Uh oh my unmute logic broke!`")
             return
