@@ -28,15 +28,16 @@ async def _(event):
             return
         if event.is_private:
          
-         PM = ("`Hello. You are accessing the availabe menu of my peru master,`"
+         PM = ("`مرحبا بك يمكنك التكلم مع سيدي اختر لماذا انت هنا ,`"
                f"{DEFAULTUSER}.\n"
                "__Let's make this smooth and let me know why you are here.__\n"
                "**Choose one of the following reasons why you are here:**\n\n"
-               "`1`. To chat with my master\n"
-               "`2`. To Give Your Girl Friend Details.\n"
+               "`1`. للتكلم مع سيدي عن شيء\n"
+               "`2`. اعطاء حبيبتك الى سيدي.\n"
 
-               "`3`. To enquire something\n"
-               "`4`. To request something\n")
+               "`3`. للاستفسار عن شيئا ما\n"
+               "`4`. لطلب شيء\n"
+              "قناة سورس التيليثون @telethoncat /n")
          ONE = ("__Okay. Your request has been registered. Do not spam my master's inbox.You can expect a reply within 24 light years. He is a busy man, unlike you probably.__\n\n"
                 "**⚠️ You will be blocked and reported if you spam nibba. ⚠️**\n\n"
                 "__Use__ `/start` __to go back to the main menu.__")
