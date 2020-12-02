@@ -94,15 +94,15 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 def paginate_help(page_number, loaded_telethoncat, prefix):
     number_of_rows = 10
     number_of_cols = 2
-    helpable_plugins = []
-    for p in loaded_plugins:
+    helpable_telethoncat = []
+    for p in loaded_telethoncat:
         if not p.startswith("_"):
-            helpable_plugins.append(p)
-    helpable_plugins = sorted(helpable_plugins)
+            helpable_telethoncat.append(p)
+    helpable_telethoncat = sorted(helpable_telethoncat)
     modules = [custom.Button.inline(
         "{} {} {}".format ("✨", x , "✨"),
         data="us_plugin_{}".format(x))
-        for x in helpable_plugins]
+        for x in helpable_telethoncat]
     pairs = list(zip(modules[::number_of_cols], modules[1::number_of_cols]))
     if len(modules) % number_of_cols == 1:
         pairs.append((modules[-1],))
